@@ -5,7 +5,7 @@ import jinja2
 from aiohttp import web
 from aiohttp_session import setup as setup_session
 from aiohttp_session.redis_storage import RedisStorage
-import aioredis
+import redis.asyncio as redis
 
 from .panel_routes import routes as panel_routes, auth_middleware
 from .stream_routes import routes as stream_routes
